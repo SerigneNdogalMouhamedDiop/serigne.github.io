@@ -1,0 +1,151 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Couleur de fond légère */
+}
+
+header {
+    background-color: #0056b3; /* Bleu foncé */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold; /* Texte en gras */
+    transition: color 0.3s; /* Transition pour la couleur des liens */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Couleur au survol */
+}
+
+section {
+    padding: 30px;
+    margin: 20px auto; /* Marges auto pour centrer */
+    max-width: 1200px; /* Largeur maximale pour le contenu */
+    background-color: white; /* Fond blanc pour les sections */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre pour les sections */
+}
+
+.piece-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espacement entre les pièces */
+}
+
+.piece {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    flex: 1 1 calc(30% - 20px); /* Ajuste la taille pour le responsive */
+    text-align: center;
+    border-radius: 8px; /* Coins arrondis */
+    transition: transform 0.3s, box-shadow 0.3s; /* Effet de transition */
+    background-color: #e7f1ff; /* Couleur de fond douce */
+}
+
+.piece:hover {
+    transform: translateY(-5px); /* Légère élévation au survol */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée */
+}
+
+.piece img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Coins arrondis pour les images */
+    margin-bottom: 10px;
+}
+
+.contact-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.contact-info, .contact-form {
+    width: 45%;
+}
+
+.contact-box, .form-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f1f1f1; /* Fond gris clair */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+label {
+    margin: 5px 0;
+    color: #333; /* Couleur du texte des labels */
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px;
+    transition: border-color 0.3s; /* Transition pour la couleur des bordures */
+}
+
+input:focus, textarea:focus {
+    border-color: #007BFF; /* Couleur des bordures au focus */
+    outline: none; /* Retire le contour par défaut */
+}
+
+button {
+    padding: 10px;
+    background-color: #007BFF; /* Bleu clair */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+    transition: background-color 0.3s; /* Transition pour la couleur de fond */
+}
+
+button:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #0056b3; /* Même bleu foncé que l'en-tête */
+    color: white;
+    margin-top: 20px; /* Espacement au-dessus du footer */
+}
